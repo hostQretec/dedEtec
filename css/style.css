@@ -91,7 +91,7 @@ div > button::before {
   border-bottom-style: solid;
   border-top-color: rgba(255, 255, 255, 0.5);
   border-bottom-color: rgba(255, 255, 255, 0.5);
-  transform: scale(0.1, 1);
+  transform: scale(0.1, 1) !important;
 }
 .btn-one:hover button {
   letter-spacing: 3.5px;
@@ -99,7 +99,7 @@ div > button::before {
 .btn-one:hover::before {
   opacity: 1;
   transform: scale(1, 1);
-   letter-spacing: 2;
+  letter-spacing: 2;
 }
 .btn-one::after {
   content: "";
@@ -141,12 +141,12 @@ div > button::before {
   color: wheat;
   text-align: center;
   line-height: 120px;
-  transition: 0.5s;
+  transition: 0.5s !important;
 }
 
 @keyframes fadeIn {
   to {
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 
