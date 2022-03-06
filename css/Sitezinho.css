@@ -1,0 +1,64 @@
+.content:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url("LP.gif");
+  width: 2000px;
+  height: 800px;
+
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+}
+.posicao {
+  position: absolute;
+  top: 50px;
+}
+.posicaobotao {
+  position: absolute;
+  top: 400px;
+}
+.tamanhobotao {
+  font-size: 16px;
+}
+p {
+  font-size: small;
+}
+.gatodebotas {
+  top: 250px;
+  left: 20px;
+}
+.bordadoanuario {
+  position: absolute;
+  top: 30px;
+}
+.anuario1 {
+  top: 250px;
+  left: 180px;
+}
+.anuario2 {
+  top: 250px;
+  left: 340px;
+}
+.anuario3 {
+  top: 250px;
+  left: 500px;
+}
+.anuario4 {
+  top: 250px;
+  left: 660px;
+}
+.nomedafileira1 {
+  top: 199;
+}
+
+.test {
+  position: absolute;
+  background-size: auto;
+}
