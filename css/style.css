@@ -32,13 +32,14 @@ button::after {
   font-size: 120%;
   width: auto;
   text-align: center;
+  margin-top: auto;
 
   color: rgba(70, 70, 70, 0.603);
   animation: blinker 0.8s step-start infinite;
 }
 button::before {
   content: "⠀";
-  font-size: 30% !important;
+  font-size: 40% !important;
   text-align: center;
 }
 
@@ -51,9 +52,9 @@ button::before {
 
 /* CSS */
 .btn {
-  position: inherit;
+ position: relative;
   border-color: #ffffff;
-  padding: 0.01em 0.1em;
+  padding: 0.01px 0.01px;
   cursor: pointer;
   font-size: 3em;
   font-family: "Corrupted File", sans-serif;
