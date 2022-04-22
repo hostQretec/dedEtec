@@ -8,11 +8,6 @@ body {
   align-items: center;
 }
 
-fe {
-  height: 30px;
-  width: 30px;
-}
-
 .onclick {
 }
 
@@ -22,6 +17,7 @@ load {
 }
 
 ld {
+  
 }
 
 .hidden {
@@ -50,6 +46,7 @@ button::before {
     opacity: 0;
   }
 }
+
 
 /* CSS */
 .btn {
