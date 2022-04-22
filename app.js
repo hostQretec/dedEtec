@@ -14,7 +14,7 @@ function redirect() {
   const div = document.querySelector("#add");
 
   const image = new Image(600, 500); // Largura (width) e altura (height).
-  image.src = "../usedimages/fullloading.gif";
+  image.src = "./usedimages/fullloading.gif";
   console.log("aaaa");
 
   div.appendChild(image);
