@@ -1,54 +1,48 @@
-@font-face {
-  font-family: Hacked;
-  src: url(https://hackedfont.com/HACKED.ttf);
-}
-.loadingimg {
-  z-index: -50;
-}
+@import url("http://fonts.cdnfonts.com/css/corrupted-file");
 
-img.animated-gif {
-  width: 450px;
-  height: auto;
-}
-.fullload {
-  width: auto;
-  top: -10px;
-  height: auto;
-  
-}
-
-.body {
-  background-color: black;
+body {
+  background-color: rgb(0, 0, 0);
   text-align: center;
-}
-.center {
-  position: absolute;
-  top: 70%;
-  width: 200%;
-  text-align: center;
+  background-repeat: no-repeat;
+  position: relative;
+  align-items: center;
 }
 
-div > button::after {
+fe {
+  height: 30px;
+  width: 30px;
+}
+
+.onclick {
+}
+
+load {
+  text-align: center;
+  position: fixed;
+}
+
+ld {
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 2s 0.5s, opacity 0.5s linear;
+}
+
+button::after {
   content: "▮";
-  font-size: 49px;
+  font-size: 120%;
   text-align: center;
 
   color: rgba(107, 107, 107, 0.603);
-
   animation: blinker 1s linear infinite;
 }
-div > button::before {
-  content: "Join Us";
-
+button::before {
+  content: "⠀";
+  font-size: 30% !important;
   text-align: center;
-  left: 10px;
-  color: rgb(189, 185, 185);
-}
-.button1 {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 0;
-  border: none;
-  background: none;
 }
 
 @keyframes blinker {
@@ -56,112 +50,26 @@ div > button::before {
     opacity: 0;
   }
 }
+
+/* CSS */
 .btn {
-  position: relative;
-  line-height: 85px;
-  height: 90px;
-  text-align: center;
-  width: 200px;
-  cursor: pointer !important  ;
+  position: inherit;
+  border-color: #ffffff;
+  padding: 0.01em 0.1em;
+  cursor: pointer;
+  font-size: 3em;
+  font-family: "Corrupted File", sans-serif;
+  color: rgb(59, 56, 56);
+  background-image: linear-gradient(45deg, transparent 50%, #000000 50%);
+  background-position: 1%;
+  background-size: 400%;
+  -webkit-transition: background 500ms ease-in-out, color 500ms ease-in-out;
+  transition: background 500ms ease-in-out, color 500ms ease-in-out;
 }
 
-.btn-one {
-  color: rgb(248, 244, 244);
-  transition: all 0.3s;
-  position: relative;
-}
-.btn-one button {
-  transition: all 0.3s;
-  font-size: 40px;
-  text-align: center;
-}
-.btn-one::before {
-  content: "";
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  opacity: 0;
-  transition: all 0.3s;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-top-color: rgba(255, 255, 255, 0.5);
-  border-bottom-color: rgba(255, 255, 255, 0.5);
-  transform: scale(0.1, 1) !important;
-}
-.btn-one:hover button {
-  letter-spacing: 3.5px;
-}
-.btn-one:hover::before {
-  opacity: 1;
-  transform: scale(1, 1);
-  letter-spacing: 2;
-}
-.btn-one::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  transition: all 0.3s;
-  background-color: rgba(255, 255, 255, 0.082);
-}
-.btn-one:hover::after {
-  opacity: 0;
-  transform: scale(0.1, 1);
+.btn:hover {
+  color: #ffffff;
+  background-position: 100%;
 }
 
-.splash {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  z-index: 200;
-  color: wheat;
-  text-align: center;
-  line-height: 120px;
-}
-.splash.display-none {
-  position: fixed;
-  opacity: 0%;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100vh;
-  background-color: black;
-  z-index: -100;
-  color: wheat;
-  text-align: center;
-  line-height: 120px;
-  transition: 0.5s !important;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1 !important;
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn ease-in forwards;
-}
-
-.box-1 {
-  top: 500px !important;
-}
-.plus {
-  position: fixed;
-}
-
-.plus.minor {
-  background-image: url(fullloading.gif);
-}
+/*Resposividade*/
