@@ -30,10 +30,11 @@ ld {
 button::after {
   content: "▮";
   font-size: 120%;
+  width: auto;
   text-align: center;
 
-  color: rgba(107, 107, 107, 0.603);
-  animation: blinker 1s linear infinite;
+  color: rgba(70, 70, 70, 0.603);
+  animation: blinker 0.8s step-start infinite;
 }
 button::before {
   content: "⠀";

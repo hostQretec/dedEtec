@@ -13,7 +13,7 @@ function redirect() {
 
   const div = document.querySelector("#add");
 
-  const image = new Image(600, 500); // Largura (width) e altura (height).
+  const image = new Image(800, 700); // Largura (width) e altura (height).
   image.src = "./usedimages/fullloading.gif";
   console.log("aaaa");
 
@@ -71,7 +71,7 @@ new TypeIt("#WC", {
   .type("Ã")
   .pause(108)
   .type("O")
-  .pause(1663)
+  .pause(500)
   .delete(1)
   .pause(100)
   .delete(1)
